@@ -1,39 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!-- Hovedlayout for startskærmen -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp">
 
+    <!-- Søgefelt hvor brugeren kan skrive -->
     <EditText
         android:id="@+id/searchEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Søg begivenhed" />
 
+    <!-- Knap der starter søgning -->
     <Button
         android:id="@+id/searchButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Søg" />
 
+    <!-- Knap der åbner skærmen til at oprette ny begivenhed -->
     <Button
         android:id="@+id/addEventButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Opret ny begivenhed" />
 
+    <!-- Switch til at slå dark mode til og fra -->
     <Switch
         android:id="@+id/darkModeSwitch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Dark mode" />
 
+    <!-- Liste der viser alle begivenheder -->
+    <!-- layout_weight gør at den fylder resten af skærmen -->
     <ListView
         android:id="@+id/eventListView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="0dp"
+        android:layout_weight="1" />
 
+    <!-- Knap der rydder alle begivenheder -->
     <Button
         android:id="@+id/clearAllButton"
         android:layout_width="match_parent"

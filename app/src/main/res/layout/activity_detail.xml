@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!-- Layout til detaljeskærmen for en begivenhed -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,6 +10,7 @@
     android:paddingBottom="16dp"
     android:paddingTop="80dp">
 
+    <!-- Viser navnet på begivenheden -->
     <TextView
         android:id="@+id/detailNameTextView"
         android:layout_width="match_parent"
@@ -16,6 +19,7 @@
         android:textSize="22sp"
         android:textStyle="bold" />
 
+    <!-- Viser dato -->
     <TextView
         android:id="@+id/detailDateTextView"
         android:layout_width="match_parent"
@@ -23,6 +27,7 @@
         android:text="Dato"
         android:paddingTop="10dp" />
 
+    <!-- Viser tidspunkt -->
     <TextView
         android:id="@+id/detailTimeTextView"
         android:layout_width="match_parent"
@@ -30,6 +35,7 @@
         android:text="Tid"
         android:paddingBottom="10dp" />
 
+    <!-- Viser den fulde beskrivelse af begivenheden -->
     <TextView
         android:id="@+id/detailDescriptionTextView"
         android:layout_width="match_parent"
@@ -37,12 +43,14 @@
         android:text="Beskrivelse"
         android:paddingBottom="20dp" />
 
+    <!-- Knap der åbner begivenhedens link i browseren -->
     <Button
         android:id="@+id/openBrowserButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Åbn i browser" />
 
+    <!-- Knap der lukker detaljeskærmen og går tilbage -->
     <Button
         android:id="@+id/backButton"
         android:layout_width="match_parent"

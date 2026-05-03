@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!-- ScrollView gør at brugeren kan scrolle hvis skærmen er for lille -->
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!-- LinearLayout placerer elementerne lodret under hinanden -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -12,6 +15,7 @@
         android:paddingBottom="16dp"
         android:paddingTop="60dp">
 
+        <!-- Titel på skærmen -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -20,6 +24,7 @@
             android:textStyle="bold"
             android:paddingBottom="20dp" />
 
+        <!-- Input til begivenhedens navn -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -32,6 +37,7 @@
             android:layout_height="wrap_content"
             android:hint="Fx Sommerfest" />
 
+        <!-- Input til dato. Feltet åbner DatePicker i Java-koden -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -45,8 +51,9 @@
             android:layout_height="wrap_content"
             android:hint="Fx 12. maj 2026"
             android:focusable="false"
-            android:clickable="true"/>
+            android:clickable="true" />
 
+        <!-- Input til tid. Feltet åbner TimePicker i Java-koden -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -60,8 +67,9 @@
             android:layout_height="wrap_content"
             android:hint="Fx 18:00"
             android:focusable="false"
-            android:clickable="true"/>
+            android:clickable="true" />
 
+        <!-- Kort beskrivelse vises på startskærmen -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -75,6 +83,7 @@
             android:layout_height="wrap_content"
             android:hint="Fx Kom til hyggeligt arrangement" />
 
+        <!-- Fuld beskrivelse vises på detaljeskærmen -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -89,6 +98,7 @@
             android:hint="Skriv flere detaljer om begivenheden"
             android:minLines="3" />
 
+        <!-- Link bruges til at åbne browseren fra detaljeskærmen -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -102,6 +112,7 @@
             android:layout_height="wrap_content"
             android:hint="Fx https://www.google.com" />
 
+        <!-- Gemmer begivenheden -->
         <Button
             android:id="@+id/saveEventButton"
             android:layout_width="match_parent"
@@ -109,6 +120,7 @@
             android:text="Gem begivenhed"
             android:layout_marginTop="20dp" />
 
+        <!-- Lukker skærmen uden at gemme -->
         <Button
             android:id="@+id/cancelButton"
             android:layout_width="match_parent"
